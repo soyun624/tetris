@@ -25,7 +25,7 @@ init();
 
 
 function init(){
-    
+    console.log(score);
     tempMovingItem = {...movingItem};
 
     for(let i = 0; i < game_rows ; i++){
@@ -113,7 +113,7 @@ function checkMatch(){
             child.remove();
             prependNewLine();
             score++;
-            scoreDisplay.innerHTML = score;
+            scoreDisplay.innerHTML = "Score : " + score;
         }
     })
      generateNewBlock();
@@ -190,6 +190,9 @@ document.addEventListener("keydown", e => {
 
 restartButton.addEventListener("click", ()=>{
     playground.innerHTML = "";
-    gameText.style.display = "none"
+    gameText.style.display = "none";
+    score = 0;
+    scoreDisplay.innerHTML = "Score : " + score;
     init()
+    
 })
