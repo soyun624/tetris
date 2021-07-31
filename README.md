@@ -6,3 +6,8 @@ Website: https://soyun-tetris-game.netlify.app/
 <li>Html</li>
 <li>Javascript</li>
 <li>Css</li>
+
+## Details
+
+![](images/tetris.png)
+
